@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #8bc6ec;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    background: #000000;
+    border-radius: 10px;
+    padding: 25px;
+    width: 350px;
+}
+
+.calc-text {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+  
+.calc-text p {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 3.5rem;
+    outline: none;
+    text-align: end;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+}
+
+button {
+    background: #111;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+}
+  
+button:active,
+button:focus {
+    filter: brightness(120%);
+}
+
+.calc-extra-functions {
+    border-bottom: 1px solid #333;
+    margin-bottom: 24px;
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
+.key-zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.key-operate {
+    color: #03c04a;
+}
+
+.key-operate.equal-operation {
+    color: #fff;
+    background: #03c04a;
+}
+
+.key-operate, .key-others {
+    background: #333;
+}
